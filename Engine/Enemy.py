@@ -24,9 +24,7 @@ class Enemy(Thread):
 
 	def run(self):
 		last_move = time.time()
-		while self.health > 0: # not at the end
+		while self.health > 0 and self.x < 100 and self.y < 100: # not at the end
 			current_move = time.time()
 			delta_time = current_move - last_move
 			self.move(*self.path.getMove((self.x, self.y), delta_time))
-			time.sleep(.1)
-			self.health -= 1

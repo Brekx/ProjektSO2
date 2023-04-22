@@ -11,10 +11,11 @@ class Path:
 	def getMove(self, position, T: int):
 		dx = self.end[0] - position[0]
 		dy = self.end[1] - position[1]
-		p = (dx^2 + dy^2)
+		p = (dx**2 + dy**2)
 		if p == 0:
 			return 0, 0
-		my = sqrt((dy^2 * self.speed^2) / p)
+		my = sqrt((dy**2 * self.speed**2) / p) * T/1000
 		mx = (dx*my)/dy
-
+		if(mx > dx and my > dy):
+			return dx, dy
 		return mx, my
