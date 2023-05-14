@@ -1,12 +1,12 @@
 from math import sqrt
 
 class Path:
-	# end: tuple(int,` int)
-	# speed: int`
+	# end: tuple(int, int)
+	speed: int
 
-	def __init__(self) -> None:
-		self.end = (100, 100)
-		self.speed = 1
+	def __init__(self, x=800, y=600, speed=0.01) -> None:
+		self.end = (x, y)
+		self.speed = speed
 
 	def getMove(self, position, T: int):
 		dx = self.end[0] - position[0]
