@@ -1,4 +1,5 @@
 from threading import Event, Thread
+from typing import Tuple
 
 
 class Tower(Thread):
@@ -6,7 +7,7 @@ class Tower(Thread):
 	damage: int
 	reload: int
 	quitEvent: Event
-	# position: tuple(int, int)
+	position: Tuple[int, int]
 
 	def __init__(self, quitEvent, range, damage, reload, position, enemies) -> None:
 		super().__init__()

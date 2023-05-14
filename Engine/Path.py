@@ -1,7 +1,8 @@
 from math import sqrt
+from typing import Tuple
 
 class Path:
-	# end: tuple(int, int)
+	end: Tuple[int, int]
 	speed: int
 
 	def __init__(self, x=800, y=600, speed=0.01) -> None:

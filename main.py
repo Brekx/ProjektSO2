@@ -1,7 +1,7 @@
 import sys
 from threading import Event, Thread
-import threading
 import time
+from typing import List
 from Engine.Enemy import Enemy
 from PyQt5 import QtCore, QtGui, QtWidgets, uic
 from PyQt5.QtCore import Qt, QRect
@@ -39,8 +39,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 class MainThread(Thread):
-	# enemies: list(Enemy)
-	# towers: list(Tower)
+	enemies: List[Enemy]
+	towers: List[Tower]
 
 	def __init__(self, paiter):
 		super().__init__()
