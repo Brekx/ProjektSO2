@@ -12,6 +12,10 @@ class Enemy(Thread):
 	path: Path
 
 	def getPosition(self):
+		"""getPosition()
+		Returns:
+			position: (x, y)
+		"""
 		return (self.x, self.y)
 	
 	def move(self, dx: int, dy: int):
@@ -43,6 +47,9 @@ class Enemy(Thread):
 		self.quitEvent = quitEvent
 
 	def run(self):
+		"""
+		Enemy loop
+		"""
 		last_move = datetime.now()
 		while self.health > 0 and not self.quitEvent.is_set():
 			current_move = datetime.now()

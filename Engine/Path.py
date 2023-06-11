@@ -6,6 +6,12 @@ class Path:
 	speed: int
 
 	def __init__(self, x=800, y=600, speed=.01) -> None:
+		"""Path(x, y)
+		Args:
+			x: int target x
+			y: int target y
+			speed: int speed for path follower
+		"""
 		self.end = (x, y)
 		self.speed = speed
 

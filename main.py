@@ -60,6 +60,10 @@ class MainThread(Thread):
 	available_towers: int
 
 	def __init__(self, paiter):
+		"""MainThread(painter)
+		Args:
+			painter: QtGui.QPainter to draw on window canvas
+		"""
 		super().__init__()
 		self.r = Random()
 		self.painter = paiter
