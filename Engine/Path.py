@@ -10,6 +10,11 @@ class Path:
 		self.speed = speed
 
 	def getMove(self, position, T: int):
+		"""getMove(position, T: int)
+		Args:
+			position: (x, y) current position
+			T:int passed time
+		"""
 		dx = self.end[0] - position[0]
 		dy = self.end[1] - position[1]
 		p = (dx**2 + dy**2)

@@ -25,6 +25,12 @@ class MainWindow(QtWidgets.QMainWindow):
 		self.main_thread.start()
 
 	def draw(self, enemies_positions, towers_positions, available_towers):
+		"""draw(self, enemies_positions, towers_positions, available_towers)
+		Args:
+			enemies_positions: List[(x, y)] positions of enemies
+			towers_positions: List[(x, y)] positions of towers
+			available_towers: int remaining towers to place
+		"""
 		painter = QtGui.QPainter(self.label.pixmap())
 		painter.fillRect(QRect(0, 0, 800, 600), QtGui.QColor(0, 0, 0))
 		painter.drawImage(QRect(350, 500, 100, 100), QtGui.QImage("resources/Castle.png"))
@@ -35,6 +41,7 @@ class MainWindow(QtWidgets.QMainWindow):
 		painter.end()
 		self.update()
 
+	# Mouse service
 	def mousePressEvent(self, event):
 			if event.button() == Qt.LeftButton:
 					self.pressPos = event.pos()
@@ -60,10 +67,18 @@ class MainThread(Thread):
 		self.available_towers = 1
 
 	def addTower(self, x, y):
+		"""addTower(self, x, y)
+		Args:
+			x: x position of new tower
+			y: y position of new tower
+		"""
 		if self.available_towers > 0:
 			self.towers.append(Tower(self.quitEvent, 100, 1, 5, (x, y)))
 
 	def run(self):
+		"""
+		Main Thread loop
+		"""
 		self.quitEvent = Event()
 		self.enemies = []
 		self.towers = []

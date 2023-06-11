@@ -13,9 +13,9 @@ Nasza gra to klasyczny przykład koncepcji "Tower Defences". Na początku twożo
 ## Graficzne przedstawienie gry
 
 - Na początku tworzymy plansze na której jest nasz zamek oraz przeciwnik co widać na poniższym obrazku:
-![Początek gry](./resorces/PoczatekGry.png)
+![Początek gry](./resources/PoczatekGry.png)
 - W lewym górnym rogu widzimy informację o dostępnych wieżach obronnych do postawienia. Jeżelimamy dostępne wieże to po kliknięciu lewym przyciskiem myszy zustaną one umieszczone na planszy w miejscu kursora. Możemy to zobaczyć na poniższym obrazku:
-![Wieże obronne](./resorces/WiezeObronne.png)
+![Wieże obronne](./resources/WiezeObronne.png)
 - Jeżeli przeciwnik ominie nasze wieże obronnne i dotrze do zamku to przegrywamy
 
 ## Zastosowane Technologie
