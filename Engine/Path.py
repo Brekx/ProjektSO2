@@ -5,7 +5,7 @@ class Path:
 	end: Tuple[int, int]
 	speed: int
 
-	def __init__(self, x=800, y=600, speed=0.01) -> None:
+	def __init__(self, x=800, y=600, speed=.01) -> None:
 		self.end = (x, y)
 		self.speed = speed
 
