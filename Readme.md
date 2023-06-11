@@ -1,9 +1,9 @@
 # Projekt SO2
 ## Spis treści
-* [Gra obrona zamku](#general-info)
-* [Graficzne przedstawienie gry]
-* [Zastosowane technologie]
-* [Autorzy]
+* [Gra obrona zamku](#gra-obrona-zamku)
+* [Graficzne przedstawienie gry](#graficzne-przedstawienie-gry)
+* [Zastosowane technologie](#zastosowane-technologie)
+* [Autorzy](#autorzy)
 
 
 
@@ -36,5 +36,5 @@ W aplikacji istnieją dwie sekcje krytyczne, które są kluczowe dla poprawnego 
 Biblioteka PyQt jest wykorzystywana do tworzenia interfejsu użytkownika w aplikacji desktopowej. PyQt to pakiet umożliwiający integrację biblioteki Qt, która jest popularnym zestawem narzędzi do tworzenia aplikacji graficznych, z językiem Python. Pozwala to na tworzenie estetycznych interfejsów użytkownika, obsługę zdarzeń, tworzenie okien dialogowych i wiele innych funkcji.
 
 ## Autorzy
-Bartosz Gwiazda
-Krzysztof Krajewski
+- Bartosz Gwiazda
+- Krzysztof Krajewski
